@@ -1,0 +1,143 @@
+/*---------- Nav ------------*/
+#navbarNav {
+    height: 100%;
+    justify-content: flex-end;
+}
+
+#navbarNav.opened {
+    display: block;
+}
+
+.nav__icon-collapse {
+    width: 40px;
+    height: 40px;
+    position: relative;
+    top: 0;
+    right: 0;
+}
+
+.nav__icon-collapse i {
+    color: var(--white-color);
+    font-size: 2rem;
+}
+
+.nav {
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    right: 0;
+    left: 0;
+    justify-content: space-between;
+    height: var(--nav-height);
+    background-color: var(--p-blue-100);
+    font-size: var(--font-text);
+    padding: 0 ;
+}
+
+.nav__wrap {
+    width: 100% ;
+    display: flex;
+    padding: 0;
+    height: 100%;
+}
+
+.nav__list-right {
+    position: relative;
+    left: 1px;
+}
+
+.nav__list-right, 
+.nav__list-left {
+    height: 100%;
+    align-items: center;
+}
+
+.nav__item {
+    border-right: 1px solid #4f91ca;
+    position: relative;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+#home {
+    border-right: none;
+}
+
+#home:after {
+    display: none;
+}
+
+.nav__item.active {
+    background-color: var(--white-color);
+}
+
+.nav__item.active .nav__link {
+    color: var(--p-blue-100) ;
+}
+
+.nav__item--active::after {
+    content: ''
+}
+
+.nav__item::after {
+    content : '';
+    display: block;
+    width: 100%;
+    height: var(--nav-height);
+    background-color: var(--white-color);
+    position: absolute;
+    transform: translateY(-100%);
+    transition: all linear 0.2s;
+}
+
+.nav__item:hover::after {
+    transform: translateY(0);
+}
+
+.nav__item:hover {
+    border-right-color: transparent;
+}
+
+.nav__item:hover .nav__link {
+    color: var(--p-blue-100) ;
+}
+
+.nav__link {
+    position: relative;
+    z-index: 1;
+    font-size: var(--font-text);
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: var(--white-color) ;
+    transition: color linear 0.3s;
+    padding: 0 25px;
+    box-sizing: content-box;
+    user-select: none;
+}
+
+.nav__link--active {
+    border: none;
+}
+
+.nav__logo {
+    fill: #fff;
+    height: 49px;
+}
+
+.nav__icon {
+    font-size: 1.4rem;
+    margin-left: 4px;
+}
+
+.nav__list-left  .nav__link .nav__icon {
+    position: relative;
+    top: -1px;
+}
+
+.nav__position {
+    font-size: 1.6rem;
+    margin-right: 4px;
+}
+

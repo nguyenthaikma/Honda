@@ -1,0 +1,365 @@
+#our-vehicles {
+  background-color: #f5f5f5;
+}
+
+.our-vehicles__heading {
+  font-size: 6rem;
+  color: #06456a;
+  font-weight: 300;
+  letter-spacing: 0.01rem;
+  text-align: center;
+}
+
+.our-vehicles__indicators {
+  padding: 36px 0 4px;
+  width: 70% !important;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+  width: 3%;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  opacity: 1 !important;
+}
+
+.carousel-control-prev i,
+.carousel-control-next i {
+  border-radius: 4px;
+  font-size: 3rem;
+  padding: 20px 12px;
+  background-color: var(--white-color);
+  color: var(--p-dark-blue-200);
+}
+
+.carousel-control-prev i:hover,
+.carousel-control-next i:hover {
+  color: var(--p-blue-200);
+}
+
+.our-vehicles__indicator-item {
+  font-size: 1.5rem;
+  color: var(--p-dark-blue-200);
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.our-vehicles__indicator-item.active {
+  color: var(--p-blue-200);
+  cursor: default;
+  border-bottom: 5px solid var(--p-blue-200);
+}
+
+.carousel-item {
+  height: 550px;
+}
+
+.carousel__img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.carousel-caption {
+  height: 100%;
+  width: 400px;
+  top: 0;
+  right: 0;
+  left: 0;
+  padding: 38px 0 0 68px;
+  text-align: unset;
+}
+
+.carousel-caption__title {
+  font-size: var(--font-text);
+  font-weight: 700;
+  color: var(--white-color);
+  margin-bottom: 70px;
+}
+
+.carousel-caption__title span {
+  font-weight: 500;
+}
+
+.carousel-caption__svg svg {
+  width: 100%;
+}
+
+.carousel-caption__desc {
+  font-size: 1.5rem;
+  padding: 20px 0;
+  font-weight: 300;
+}
+
+.carousel-caption__stats {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.carousel-caption__msrp {
+  margin-right: 40px;
+}
+
+.carousel-caption__stat {
+  font-size: 3.6rem;
+  font-weight: 300;
+  line-height: 5rem;
+  margin-bottom: 4px;
+}
+
+.carousel-caption__label {
+  font-size: 1.2rem;
+  font-weight: 700;
+  line-height: 1.333rem;
+  color: #f6f6f6;
+}
+
+.carousel-caption__label span {
+  font-size: 1.4rem;
+  color: var(--p-blue-200);
+}
+
+.carousel-caption__btn {
+  border-color: var(--white-color);
+  margin-right: 4px;
+}
+
+.carousel-caption__btn:last-child {
+  border-color: var(--p-orange-200);
+}
+
+.carousel-caption__footer {
+  border-top: 2px solid hsla(0, 0%, 100%, 0.2);
+  cursor: pointer;
+  position: absolute;
+  bottom: 12px;
+  height: 43px;
+  width: 500px;
+  display: flex;
+  justify-content: space-between;
+  color: var(--white-color);
+  align-items: center;
+}
+
+.carousel-caption__footer img {
+  width: 170px;
+  object-fit: cover;
+  height: 100%;
+}
+
+.carousel-caption__link {
+  height: fit-content;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+#my22-cr-v-hybrid {
+  width: unset;
+}
+
+#our-vehicles__carousel {
+  animation-delay: 0s !important;
+  animation-duration: 0s !important;
+  --animate-duration: 0s;
+  --animate-delay: 0s;
+  --animate-repeat: 0s;
+}
+
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+  .carousel-caption__footer {
+    width: 400px;
+  }
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+  .carousel-caption {
+    width: 300px;
+  }
+
+  .carousel-caption__footer {
+    width: 100%;
+  }
+
+  .carousel-caption__title {
+    margin-bottom: 20px;
+  }
+
+  .carousel-caption__stats {
+    flex-direction: column;
+  }
+
+  .carousel-item {
+    height: 620px;
+  }
+
+  .carousel-caption__footer {
+    bottom: 20px;
+  }
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+  .carousel-caption__desc {
+    display: none;
+  }
+
+  .carousel-sm ol {
+    display: none;
+  }
+
+  .carousel-caption__stats {
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 12px;
+    margin-bottom: 20px;
+  }
+
+  .our-vehicles__heading {
+    margin-bottom: 80px;
+  }
+  .carousel-caption {
+    display: flex;
+    flex-direction: column;
+    margin: auto auto 0;
+    padding: 0;
+    width: 100%;
+    align-items: center;
+    height: 60%;
+  }
+
+  .carousel-caption__title {
+    margin-top: 12px;
+    margin-bottom: 12px;
+  }
+
+  .carousel-caption__info {
+    width: 60%;
+  }
+
+  .carousel-caption__svg svg {
+    width: 100%;
+  }
+
+  .carousel-caption__btn {
+    font-weight: 500;
+    width: 120px;
+    padding: 5px 18px;
+  }
+
+  .carousel-item {
+    height: 580px;
+  }
+
+  .carousel-caption__footer {
+    width: 60%;
+    bottom: 0;
+  }
+
+  .carousel-caption__footer img {
+    display: none;
+  }
+
+  .carousel-caption__stat {
+    margin-bottom: 10px;
+  }
+
+  #our-vehicles {
+    padding-top: 40px;
+  }
+
+  #our-vehicles__carousel {
+    position: relative;
+  }
+
+  .carousel-sm {
+    width: 60%;
+    margin: auto;
+    border: 1px solid var(--p-dark-blue-200);
+    border-radius: 4px;
+    position: absolute;
+    top: -54px;
+    z-index: 1;
+    left: 20%;
+    background-color: var(--white-color);
+  }
+
+  .carousel-sm__heading {
+    border-bottom: 1px solid var(--p-dark-blue-200);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .carousel-sm__heading i {
+    font-size: 1.8rem;
+    color: var(--p-dark-blue-200);
+    margin-right: 12px;
+    transition: all linear 0.3s;
+  }
+
+  .carousel-sm__heading i.active {
+    transform: rotate(180deg);
+  }
+
+  .carousel-sm__title {
+    color: var(--p-blue-100);
+    font-size: 1.4rem;
+    font-weight: 400;
+    padding: 12px 16px;
+    margin: 0;
+  }
+
+  .carousel-sm__title span {
+    color: var(--p-dark-blue-200);
+    font-weight: 700;
+    font-size: 1.2rem;
+    margin-top: 8px;
+    display: block;
+  }
+
+  .our-vehicles__indicator-item {
+    color: var(--p-dark-blue-200);
+    font-weight: 700;
+    padding: 12px 16px;
+    font-size: 1.4rem;
+  }
+
+  .our-vehicles__indicator-item.active {
+    color: var(--p-dark-blue-200);
+    border: none;
+  }
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  .carousel-caption__title {
+    margin-top: 22px;
+  }
+
+  .carousel-item {
+    height: 600px;
+  }
+
+  .carousel-caption__info {
+    width: 80%;
+  }
+
+  .carousel-control-prev i {
+    position: relative;
+    left: 14px;
+  }
+
+  .carousel-control-next i {
+    position: relative;
+    right: 14px;
+  }
+
+  .carousel-caption__footer {
+    width: 80%;
+  }
+}

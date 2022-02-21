@@ -1,0 +1,145 @@
+:root {
+  /* color */
+  --white-color: #fff;
+  --black: #000;
+  --p-blue-100: #007cc0;
+  --p-blue-200: #2198dc;
+  --p-dark-blue-100: #00446a;
+  --p-dark-blue-200: #00324f;
+  --p-orange-100: #ff4040;
+  --p-orange-200: #e42525;
+
+  /* font */
+  --font-text: 1.4rem;
+
+  --nav-height: 48px;
+  --sub-nav-height: 61px;
+}
+
+* {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: AvenirNext-Regular, HelveticaNeue, Helvetica Neue, Helvetica,
+    Arial, sans-serif;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+.opened {
+  display: block !important;
+}
+
+.border-none {
+  border: none !important;
+}
+
+.nav-section {
+  position: fixed !important;
+  z-index: 9;
+  top: var(--nav-height);
+  box-shadow: rgb(59 59 59 / 63%) 1px 5px 30px -12px;
+}
+
+.mCSB_draggerRail {
+  height: 0 !important;
+}
+
+.animate__animated {
+  -webkit-animation-duration: 0.6s;
+  animation-duration: 0.6s;
+}
+
+.btn-first {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--white-color);
+  background-color: var(--p-orange-200);
+  border: 2px solid var(--p-orange-200);
+  padding: 4px 20px;
+  border-radius: 40px;
+}
+
+.btn-first:hover {
+  background-color: var(--white-color);
+  color: var(--p-orange-200);
+}
+
+.btn-first.active {
+  background-color: var(--white-color);
+  color: var(--p-orange-200);
+}
+
+.btn-first.active:hover {
+  background-color: var(--p-orange-200);
+  color: var(--white-color);
+}
+
+.btn-second {
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: var(--p-blue-100);
+  background-color: var(--white-color);
+  border: 2px solid var(--p-blue-100);
+  padding: 2px 20px;
+  border-radius: 40px;
+}
+
+.btn-second:hover {
+  background-color: var(--p-blue-100);
+  color: var(--white-color);
+}
+
+.btn-second.active {
+  background-color: var(--p-blue-100);
+  color: var(--white-color);
+}
+
+.btn-second.active:hover {
+  background-color: var(--white-color);
+  color: var(--p-blue-100);
+}
+
+.back-to-top {
+  position: fixed;
+  z-index: 100;
+  right: 0;
+  bottom: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  background-color: var(--p-blue-100);
+  box-shadow: 0 2px 4px 0 rgb(0 0 0 / 35%);
+  border-radius: 8px 0 0 8px;
+  transform: translateX(105%);
+  transition: all linear 0.3s;
+}
+
+.back-to-top i {
+  font-size: 2.5rem;
+  color: #fff;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateY(-200%);
+  }
+  to {
+    transform: unset;
+  }
+}

@@ -1,0 +1,219 @@
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    .nav__link {
+        padding: 0 6px;
+    }
+
+    .nav__icon,
+    .nav__position {
+        margin: 0;
+    }
+
+    .owners__link span {
+        line-height: 1;
+    }
+
+    .veh-future {
+       height: 130px;
+    }
+
+    .veh-future__img {
+        width: 100px;
+    }
+
+    .veh-future__content {
+        margin: auto 0;
+    }
+
+    .vehicles {
+        bottom: 0;
+    }
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+    .nav-st__type {
+        display: none;
+    }
+
+    .nav-st__item::before {
+        display: none;
+    }
+
+    .discover__list {
+        padding-left: 0;
+    }
+
+    .owners__list.left {
+        border: none;
+    }
+    .owners__list.left {
+        padding: 0;
+    }
+
+    .owners {
+        padding: 15px;
+    }
+
+    .nav-st__link svg {
+        width: 30px;
+        height: 30px;
+    }
+
+    .nav-st__f-link {
+        font-size: 1.2rem;
+    }
+
+    .nav-st__list {
+        padding-left: 0;
+    }
+
+    .discover__icon i {
+        color: var(--white-color);
+    }
+
+ 
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+
+    .search.opened {
+        display: none !important;
+    }
+
+    .nav__list-left, .nav__list-right {
+        flex-direction: row;
+    }
+
+    .nav__list-right {
+        z-index: 10;
+    }
+
+    .nav__item::after {
+        display: none;
+    }
+
+    .nav__item.active {
+        background-color: unset;
+    }
+
+    .nav__link {
+        color: var(--white-color) !important;
+    }
+
+    
+    /* nav__list-right */
+    .nav__list-right {
+        flex-direction: column;
+        text-transform: uppercase;
+        background-color: #eee;
+        position: fixed;
+        top: 48px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+
+    .nav__item {
+        border-color: transparent;
+    }
+
+    .nav__item--r {
+        height: 48px;
+        border-bottom: 1px solid #c4c4c4;
+        border-right: none;
+        width: 100%;
+    }
+
+    .nav__item--r.active {
+        background-color: #eee;
+    }
+
+    .nav__item--r::after {
+        display: none;
+    }
+
+    .nav__item--r a {
+        color: var(--p-dark-blue-200) !important;
+        padding-left: 0;
+    }
+
+    .nav-search {
+        width: 100%;
+        max-width: 535px;
+        height: 40px;
+        margin-top: 30px;
+    }
+
+    .nav-search__input {
+        padding: 12px 0 12px 40px;
+        font-size: var(--font-text);
+        color: var(--p-dark-blue-200);
+        font-weight: 500;
+        letter-spacing: 0;
+        border-radius: 35.5px;
+    }
+
+    .nav-search__input::placeholder {
+        font-size: var(--font-text);
+        font-weight: 500;
+        color: var(--p-blue-200);
+    }
+
+    .nav-search__icon {
+        position: relative;
+        margin: 0;
+        left: 26px;
+    }
+
+    .nav__btn-group {
+        margin-left: auto;
+    }
+
+    #english {
+        border-bottom: none;
+    }
+
+
+    
+
+  
+
+    .nav-section {
+        left: 0;
+        right: 0;
+        width: 100%;
+    }
+
+    .owners {
+        box-sizing: border-box;
+        position: absolute !important;
+    }
+
+    .shopping-tool {
+        position: absolute !important;
+    }
+
+    .discover {
+        position: absolute !important;
+    }
+
+    .vehicles__heading::after,
+    .vehicles__heading::before {
+        display: none;
+    }
+
+    .vehicles__nav {
+        display: none;
+    }
+
+}
+
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+    
+}
