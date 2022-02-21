@@ -39,17 +39,6 @@
     position: relative;
 }
 
-.swiper-slide h3 {
-    position: absolute;
-    font-size: 2.2rem;
-    line-height: 2.2rem;
-    font-weight: 700;
-    color: rgb(190, 188, 188);
-    bottom: 85px;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
 .swiper__slide-1 {
     background-image: url(../../img/banner-3.jpg);
 }

@@ -104,12 +104,12 @@ const handlerOnclickNavItem = (id, classContent) => {
             if(countNavItem === '' || isActiveNavItem === 'click') {
                 isActiveNavItem = '';
                 content.addClass('opened');
-                content.removeClass('animate__fadeOutUp');
-                content.addClass('animate__animated animate__fadeInUpBig');
+                content.removeClass('animate__fadeOut');
+                content.addClass('animate__animated animate__fadeIn');
                 countNavItem = $(this).attr('id');
             } else {
-                content.addClass('animate__animated animate__fadeOutUp');
-                content.removeClass('animate__fadeInUpBig');
+                content.addClass('animate__animated animate__fadeOut');
+                content.removeClass('animate__fadeIn');
                 setTimeout(function() {
                     content.removeClass('opened');
                     countNavItem = '';
@@ -117,7 +117,7 @@ const handlerOnclickNavItem = (id, classContent) => {
             }
         } else {
             countNavItem = '';
-            content.addClass('animate__animated animate__fadeOutUp');
+            content.addClass('animate__animated animate__fadeOut');
             setTimeout(function() {
                 content.removeClass('opened');
             }, 350)
@@ -126,12 +126,12 @@ const handlerOnclickNavItem = (id, classContent) => {
 }
 
 const handlerOnClickBody = () => {
-    let body = $('.body');
+    let body = $('#body');
     body.click(function() {
-        let itemNav = $('.nav-section.animate__animated.animate__fadeInUpBig');
+        let itemNav = $('.nav-section.animate__animated.animate__fadeIn');
         if(itemNav) {
-            itemNav.removeClass('animate__fadeInUpBig');
-            itemNav.addClass('animate__fadeOutUp');
+            itemNav.removeClass('animate__fadeIn');
+            itemNav.addClass('animate__fadeOut');
             isActiveNavItem = 'click';
             activeNav = '';
         }
