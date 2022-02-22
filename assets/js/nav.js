@@ -130,7 +130,7 @@ const handlerOnClickBody = () => {
     body.click(function() {
         let itemNav = $('.nav-section.animate__animated.animate__fadeIn');
         if(itemNav) {
-            itemNav.removeClass('animate__fadeIn');
+            itemNav.removeClass('animate__fadeIn opened');
             itemNav.addClass('animate__fadeOut');
             isActiveNavItem = 'click';
             activeNav = '';
