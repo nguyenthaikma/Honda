@@ -28,7 +28,6 @@ html {
     Arial, sans-serif;
   box-sizing: border-box;
   overflow-x: hidden;
-  
 }
 
 ul {
@@ -56,6 +55,12 @@ a {
 
 .mCSB_draggerRail {
   height: 0 !important;
+}
+
+
+.carousel-item {
+  transition: all 0.6s ease-in-out;
+ 
 }
 
 .animate__animated {

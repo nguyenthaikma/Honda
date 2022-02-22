@@ -191,7 +191,6 @@ $(document).ready(function () {
   $(window).resize(function() {
     let width = $(window).width();
     if(width >= 992 ) {
-      console.log([$('navbar-nav.nav__list-right')]);
       $('.navbar-nav.nav__list-right').removeClass('animate__fadeOutRight animate__animated');
     }
   })
