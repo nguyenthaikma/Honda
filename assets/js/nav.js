@@ -106,13 +106,13 @@ const handlerOnclickNavItem = (id, classContent) => {
                 // content.addClass('opened');
                 // content.removeClass('animate__fadeOut');
                 content.addClass('active');
-                $(content).slideDown("fast");
+                $(content).slideDown();
                 countNavItem = $(this).attr('id');
             } else {
                 // content.addClass('animate__animated animate__fadeOut');
                 content.removeClass('active');
 
-                $(content).slideUp("fast");
+                $(content).slideUp();
                 setTimeout(function() {
                     content.removeClass('opened');
                     countNavItem = '';
@@ -121,7 +121,7 @@ const handlerOnclickNavItem = (id, classContent) => {
         } else {
             countNavItem = '';
             content.removeClass('active');
-            $(content).slideUp("fast");
+            $(content).slideUp();
             setTimeout(function() {
                 content.removeClass('opened');
             }, 350)
@@ -136,7 +136,7 @@ const handlerOnClickBody = () => {
         if(itemNav) {
             itemNav.removeClass('active');
             // itemNav.addClass('animate__fadeOut');
-            $(itemNav).slideUp("fast");
+            $(itemNav).slideUp();
             isActiveNavItem = 'click';
             activeNav = '';
         }

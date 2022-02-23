@@ -23,6 +23,7 @@
 .carousel-control-prev,
 .carousel-control-next {
   opacity: 1 !important;
+  z-index: 10;
 }
 
 .carousel-control-prev i,

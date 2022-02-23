@@ -1,4 +1,5 @@
 
+
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
     .nav__link {
@@ -103,7 +104,7 @@
         color: var(--white-color) !important;
     }
 
-    
+
     /* nav__list-right */
     .nav__list-right {
         flex-direction: column;
@@ -216,4 +217,72 @@
 /* Large devices (desktops, less than 1200px) */
 @media (max-width: 1199.98px) {
     
+}
+
+@media (max-width: 329.98px) {
+    .nav__link {
+        font-size: 1rem;
+    }
+
+    .nav-st__f-link {
+        font-size: 1rem;
+    }
+
+    .nav-st__f-list {
+        flex-wrap: wrap;
+    }
+
+    .nav-st__f-item {
+        width: 100%;
+    }
+
+    .nav-st__f-item + .nav-st__f-item {
+        margin: 0;
+    }
+
+    .owners__link {
+        font-size: 1rem;
+    }
+
+    .discover__link {
+        font-size: 1rem;
+    }
+
+    .discover__title {
+        font-size: 1rem;
+    }
+
+    .discover__icon {
+        width: 18px;
+        height: 18px;
+        margin: 0 2px;
+    }
+
+    .nav__btn-group button {
+        font-size: 1rem;
+    }
+
+    .nav-search__input {
+        font-size: 1rem;
+    }
+
+    .nav-search__input::placeholder {
+        font-size: 1rem;
+    }
+
+    .nav__link i {
+        font-size: 1rem;
+    }
+
+    .nav-st__link svg {
+        width: 30px !important;
+    }
+
+    .continue__img {
+        width: 325px !important;
+    }
+
+    .carousel-sm__title {
+        font-size: 1rem !important;
+    }
 }
