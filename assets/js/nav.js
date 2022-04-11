@@ -103,16 +103,19 @@ const handlerOnclickNavItem = (id, classContent) => {
         if($(this).attr('id') === id) {
             if(countNavItem === '' || isActiveNavItem === 'click') {
                 isActiveNavItem = '';
-                // content.addClass('opened');
+                content.addClass('opened');
                 // content.removeClass('animate__fadeOut');
                 content.addClass('active');
-                $(content).slideDown();
+                content.removeClass('animate__fadeOutUp');
+                content.addClass('animate__animated animate__fadeInUpBig')
+                // $(content).slideDown();
                 countNavItem = $(this).attr('id');
             } else {
                 // content.addClass('animate__animated animate__fadeOut');
                 content.removeClass('active');
-
-                $(content).slideUp();
+                content.addClass('animate__animated animate__fadeOutUp');
+                content.removeClass('animate__fadeInUpBig');
+                // $(content).slideUp();
                 setTimeout(function() {
                     content.removeClass('opened');
                     countNavItem = '';
@@ -121,7 +124,8 @@ const handlerOnclickNavItem = (id, classContent) => {
         } else {
             countNavItem = '';
             content.removeClass('active');
-            $(content).slideUp();
+            content.addClass('animate__animated animate__fadeOutUp');
+            // $(content).slideUp();
             setTimeout(function() {
                 content.removeClass('opened');
             }, 350)
@@ -136,7 +140,12 @@ const handlerOnClickBody = () => {
         if(itemNav) {
             itemNav.removeClass('active');
             // itemNav.addClass('animate__fadeOut');
-            $(itemNav).slideUp();
+            itemNav.addClass('animate__fadeOutUp');
+            itemNav.removeClass('animate__fadeInUpBig');
+            setTimeout(function() {
+                itemNav.removeClass('opened');
+            }, 350)
+            // $(itemNav).slideUp();
             isActiveNavItem = 'click';
             activeNav = '';
         }
